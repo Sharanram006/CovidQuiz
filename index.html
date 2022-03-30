@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>The Covid-19 Quiz</title>
+</head>
+<body>
+    <h1>
+        The Covid-19 Quiz
+    </h1>
+    <div class="container home-page ">
+      <div class="intro">
+          <div>
+            This quiz will show how well you know about the recent Coronavirus
+          </div>
+        </div>
+        <div>
+            <div class="nametext">Enter your name</div>
+                <input type="text" class="namebox">
+                <br>
+                <button  class="submit" onclick="start()">Submit</button>
+        </div>
+        <div class="intro">
+            <div>
+              Note the timer at the bottom
+            </div>
+          </div>
+        
+
+    </div>
+    <div class="container quiz-page invisible">
+        <div class="info-box">
+            <span>
+                <span class="quenumber"></span>
+            </span>
+ 
+            <span class="circlecontainer">
+                <span class="quecircles" onclick="navQuestion(this)">1</span>
+                <span class="quecircles" onclick="navQuestion(this)">2</span>
+                <span class="quecircles" onclick="navQuestion(this)">3</span>
+                <span class="quecircles" onclick="navQuestion(this)">4</span>
+                <span class="quecircles" onclick="navQuestion(this)">5</span>
+                <span class="quecircles" onclick="navQuestion(this)">6</span>
+                <span class="quecircles" onclick="navQuestion(this)">7</span>
+                <span class="quecircles" onclick="navQuestion(this)">8</span>
+                <span class="quecircles" onclick="navQuestion(this)">9</span>
+                <span class="quecircles" onclick="navQuestion(this)">10</span>
+                <span class="quecircles" onclick="navQuestion(this)">11</span>
+                <span class="quecircles" onclick="navQuestion(this)">12</span>
+                <span class="quecircles" onclick="navQuestion(this)">13</span>
+                <span class="quecircles" onclick="navQuestion(this)">14</span>
+                <span class="quecircles" onclick="navQuestion(this)">15</span>
+
+            </span>
+        </div>
+        <div class="queans-box">
+            <div class="score">Score - 0</div>
+            <div class="questions">
+                <div id="que"> </div>
+            </div>
+            <div class="options">
+            </div> 
+            <div class="nav">
+                <button class="nav-next" onclick="nextQue()">Next</button>
+                <span class="timer">3.00</span> 
+                <button class="nav-prev invisible" onclick="prevQue()">Prev</button> 
+            </div>
+
+        </div>
+   </div>
+   <div class="container result-page invisible">
+       <h2 class="nameresult"></h2>
+       <div class="scoreboard">
+           <span>SCORE</span>
+           <span class="resultscore right"></span>
+       </div>
+       <div class="scoreboard">
+            <span>ATTEMPT</span>
+            <span class="resultattempt right"></span>
+       </div>
+       <div class="scoreboard">
+            <span>CORRECT</span>
+            <span class="resultcorrect right"></span>
+       </div>
+       <div class="scoreboard">
+        <span>TOTAL TIME</span>
+        <span class="resulttotaltime right"></span>
+       </div>
+      <div class="scoreboard">
+        <span>TIME TAKEN PER QUESTION</span>
+        <span class="resulttimeperquestion right"></span>
+       </div>
+        <div class="scoreboard">
+            <span>CORRECT TO WRONG RATIO</span>
+            <span class="resultratio right"></span>
+        </div>
+        <div class="scoreboard">
+            <span>HIGH SCORE</span>
+            <span class="resulthighscore right"></span>
+        </div>
+        <div class="scoreboard">
+            <span>USERNAME OF HIGHSCORE</span>
+            <span class="resultusername right"></span>
+        </div>
+       <button class="tryagain" onclick="tryagain()">Try Again</button>
+
+   </div>
+   <script type="text/javascript"   src="script.js"></script>
+    
+</body>
+</html>
