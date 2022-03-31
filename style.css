@@ -10,13 +10,13 @@ html {
 body {
 	height: 100%;
 	overflow: auto;
-	background: url('../Spider_WebDev_Task_2/image/Covid.png') 0% 85% no-repeat,
-		url('../Spider_WebDev_Task_2/image/Covid.png') 30% 30% no-repeat,
-		url('../Spider_WebDev_Task_2/image/Covid.png') 5% 10% no-repeat,
-		url('../Spider_WebDev_Task_2/image/Covid.png') 95% 85% no-repeat,
-		url('../Spider_WebDev_Task_2/image/Covid.png') 25% 100% no-repeat,
-		url('../Spider_WebDev_Task_2/image/Covid.png') 80% 5% no-repeat,
-		url('../Spider_WebDev_Task_2/image/Covid.png') 60% 95% no-repeat;
+	background: url('../image/Covid.png') 0% 85% no-repeat,
+		url('../image/Covid.png') 30% 30% no-repeat,
+		url('../image/Covid.png') 5% 10% no-repeat,
+		url('../image/Covid.png') 95% 85% no-repeat,
+		url('../image/Covid.png') 25% 100% no-repeat,
+		url('../image/Covid.png') 80% 5% no-repeat,
+		url('../image/Covid.png') 60% 95% no-repeat;
 
 	background-size: 300px;
 }
